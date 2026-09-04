@@ -3,14 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ELITE THREAD | Casual &amp; Official Wear in Mlolongo, Kenya</title>
-<meta name="description" content="Discover stylish casual and official wear, footwear and everyday fashion at ELITE THREAD in Mlolongo, Kenya. Shop online and order via WhatsApp with delivery across Nairobi and surrounding areas.">
-<link rel="canonical" href="https://example.com/index.html">
+<title>Shop All | ELITE THREAD</title>
+<meta name="description" content="Browse the full ELITE THREAD collection — casual and official wear, footwear and accessories. Search, filter and order via WhatsApp with delivery across Nairobi.">
+<link rel="canonical" href="https://example.com/shop.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="ELITE THREAD | Casual &amp; Official Wear">
-<meta property="og:description" content="Curated casual and official wear, footwear and accessories in Mlolongo, Kenya. Order via WhatsApp, delivery across Nairobi.">
-<meta property="og:image" content="images/banners/og-home.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="Shop All | ELITE THREAD">
+<meta property="og:description" content="Browse the full ELITE THREAD collection of casual and official wear, footwear and accessories.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&amp;family=Inter:wght@400;500;600&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
@@ -27,8 +25,8 @@
       <span>ELITE THREAD<span class="tagline">CASUAL &amp; OFFICIAL WEAR</span></span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="index.html" class="is-active">Home</a>
-      <a href="shop.html">Shop</a>
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="is-active">Shop</a>
       <div class="has-mega">
         <a href="shop.html">Categories</a>
         <div class="mega-menu">
@@ -97,115 +95,55 @@
 </div>
 
 <main>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span class="sep">/</span> Shop
+    </nav>
+    <div style="margin-bottom:28px;">
+      <span class="eyebrow">Full collection</span>
+      <h1>Shop all</h1>
+    </div>
+  </div>
 
-  <section class="hero">
-    <div class="hero__copy">
-      <span class="eyebrow">Casual &amp; Official Wear</span>
-      <h1>Style that speaks for itself.</h1>
-      <p>Discover curated casual and official wear, footwear and everyday fashion from ELITE THREAD — sourced with an eye for what actually gets worn.</p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="shop.html">Shop collection</a>
-        <a class="btn" href="#" data-wa-general>WhatsApp us</a>
-      </div>
+  <section class="container section--tight" style="padding-top:0;">
+    <div class="filters">
+      <input type="search" class="search-input" data-listing-search placeholder="Search products…" aria-label="Search products">
+      <select data-filter-category aria-label="Filter by category">
+        <option value="">All categories</option>
+      </select>
+      <button type="button" class="btn btn--sm filter-toggle" data-filter-open>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="6" x2="20" y2="6"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
+        Filters
+      </button>
+      <span class="results-count mono" data-results-count></span>
     </div>
-    <div class="hero__image">
-      <img src="images/banners/hero-home.jpg" alt="Model wearing an ELITE THREAD casual and official wear combination" onerror="this.src='images/banners/placeholder.svg';this.parentElement.querySelector('.placeholder-tag')?.removeAttribute('hidden')">
-      <span class="placeholder-tag mono" hidden>Add: images/banners/hero-home.jpg</span>
-    </div>
+
+    <div class="product-grid" data-listing-grid></div>
   </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">Shop by category</span>
-          <h2>Find your section.</h2>
-        </div>
-        <a class="btn" href="shop.html">View all products</a>
-      </div>
-      <div class="cat-grid" data-category-grid></div>
-    </div>
-  </section>
-
-  <section class="section section--stone">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">Featured</span>
-          <h2>Pieces worth a look.</h2>
-        </div>
-      </div>
-      <div class="product-grid" data-featured-grid></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">Just in</span>
-          <h2>New arrivals.</h2>
-        </div>
-        <a class="btn" href="shop.html">Shop all new arrivals</a>
-      </div>
-      <div class="product-grid" data-arrivals-grid></div>
-    </div>
-  </section>
-
-  <section class="section section--dark">
-    <div class="container split">
-      <div>
-        <span class="eyebrow">Curated for your everyday</span>
-        <h2>A wardrobe built on pieces you'll actually reach for.</h2>
-        <p style="color:rgba(247,245,241,0.75);">ELITE THREAD brings together modern fashion, footwear and lifestyle pieces selected for people who value style, comfort and individuality — casual enough for the everyday, sharp enough for the moments that call for more.</p>
-        <a class="btn btn--ghost-light" href="about.html">Our story</a>
-      </div>
-      <img src="images/banners/brand-statement.jpg" alt="Detail shot of ELITE THREAD footwear and accessories" style="width:100%;aspect-ratio:4/5;object-fit:cover;" onerror="this.src='images/banners/placeholder.svg'">
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">Why shop with us</span>
-          <h2>What you get.</h2>
-        </div>
-      </div>
-      <div class="benefits-grid">
-        <div class="benefit">
-          <span class="eyebrow">Selection</span>
-          <h4>Quality selection</h4>
-          <p>Pieces chosen for how well they're made, not just how they photograph.</p>
-        </div>
-        <div class="benefit">
-          <span class="eyebrow">Curation</span>
-          <h4>Curated fashion</h4>
-          <p>A tight, considered range across casual and official wear rather than an endless catalogue.</p>
-        </div>
-        <div class="benefit">
-          <span class="eyebrow">Ordering</span>
-          <h4>Easy WhatsApp ordering</h4>
-          <p>Ask a question, confirm a size, place an order — all in one chat.</p>
-        </div>
-        <div class="benefit">
-          <span class="eyebrow">Delivery</span>
-          <h4>Nairobi-wide delivery</h4>
-          <p>Delivery available across Nairobi and surrounding areas.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--stone">
-    <div class="container wa-band">
-      <span class="eyebrow">Found something you like?</span>
-      <h2>Talk to ELITE THREAD on WhatsApp and place your order.</h2>
-      <a class="btn btn--gold" href="#" data-wa-general>Chat on WhatsApp</a>
-    </div>
-  </section>
-
 </main>
+
+<div class="filter-drawer" data-filter-drawer>
+  <div class="filter-drawer__backdrop" data-filter-close></div>
+  <div class="filter-drawer__panel">
+    <h4>Filter &amp; sort</h4>
+    <div class="field">
+      <label for="type-select">Product type</label>
+      <select id="type-select" data-filter-type>
+        <option value="">All types</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="sort-select">Sort by</label>
+      <select id="sort-select" data-filter-sort>
+        <option value="newest">Newest</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="name-asc">Name: A–Z</option>
+      </select>
+    </div>
+    <button class="btn btn--primary btn--full" data-filter-apply>Show results</button>
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="container">
