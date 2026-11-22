@@ -213,11 +213,19 @@
 
     const catGrid = document.querySelector("[data-category-grid]");
     if (catGrid) {
+      const categoryImages = {
+        "casual-wear": "images/categories/casual-wear.jpg",
+        "official-wear": "images/categories/official-wear.jpg",
+        "footwear": "images/categories/footwear.jpg",
+        "mens-clothing": "images/categories/mens-clothing.jpg",
+        "mens-footwear": "images/categories/mens-footwear.jpg",
+        "accessories": "images/categories/accessories.jpg"
+      };
       catGrid.innerHTML = CATEGORIES.map((c) => {
         const count = PRODUCTS.filter((p) => p.category === c.slug).length;
         return `
           <a class="cat-card" href="${imgPath(c.page)}">
-            <img src="${imgPath('images/categories/placeholder.svg')}" alt="${escapeHTML(c.name)}" loading="lazy">
+            <img src="${imgPath(categoryImages[c.slug] || 'images/categories/placeholder.svg')}" alt="${escapeHTML(c.name)}" loading="lazy">
             <span class="cat-card__label">${escapeHTML(c.name)}<span>${count > 0 ? count + " piece" + (count === 1 ? "" : "s") : "Coming soon"}</span></span>
           </a>`;
       }).join("");
